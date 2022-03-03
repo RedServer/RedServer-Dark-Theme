@@ -1,0 +1,12 @@
+# IDE
+/.idea
+
+/node_modules
+package-lock.json
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.LSOverride
