@@ -1,0 +1,192 @@
+/**
+ * Меню и всякие всплывающие панели
+ */
+
+@import "./constants";
+
+body.ipsApp.ipsApp_front {
+
+	.main_menu {
+		> li,
+		> li > a {
+			color: #FFFFFF;
+		}
+
+		> li.selected:not(.dropdown) > a,
+		> li.selected.dropdown:not(:hover) > a,
+		> li:not(.dropdown) > a:active {
+			border-color: $navigation-selected-item;
+		}
+
+
+		> li.dropdown {
+			.dropdown_menu {
+				background-color: $menu-bg-color;
+
+				> a:hover {
+					background-color: lighten($menu-bg-color, 7);
+				}
+			}
+		}
+	}
+
+	/* Всплывающие карточки пользователей и диалоги (со стрелкой) */
+	.ipsHovercard {
+		background-color: $bg-color;
+		border-color: $box-border-color;
+
+		&_stemTop {
+			.ipsHovercard_stem {
+				border-top-color: $bg-color;
+
+				&:before {
+					border-top-color: $box-border-color;
+				}
+			}
+		}
+
+		&_stemBottom {
+			.ipsHovercard_stem {
+				border-bottom-color: $bg-color;
+
+				&:before {
+					border-bottom-color: $box-border-color;
+				}
+			}
+		}
+	}
+
+	.ipsMenu {
+		background-color: $menu-bg-color;
+		border-color: $menu-border-color;
+
+		&_title {
+			background-color: $menu-title-bg;
+			color: $title-color;
+		}
+
+		&_headerBar,
+		&_footerBar {
+			background-color: $menu-title-bg;
+			border-color: $menu-separator-color;
+		}
+
+		&_innerContent {
+			.ipsDataList_readStatus .ipsDataItem:not( .ipsDataItem_unread ):not( .ipsDataItem_selected ):not( .ipsModerated ) {
+				background-color: transparent;
+			}
+
+			.ipsDataItem {
+				border-color: $menu-separator-color;
+			}
+		}
+
+		&_sep {
+			border-color: $menu-separator-color;
+		}
+
+		&_selectable .ipsMenu_item:not( .ipsMenu_itemNonSelect ):not(.ipsMenu_itemChecked) {
+			a:before,
+			> span:before,
+			button:before {
+				color: rgba(255, 255, 255, 0.1);
+			}
+		}
+
+		&_item {
+			> a:not( .ipsMenu_itemInline ),
+			> span:not( .ipsMenu_itemInline ) {
+				color: $text-color;
+			}
+
+			&[data-selected] a,
+			&[data-selected] span,
+			.ipsMenu_hover,
+			> a:hover {
+				background-color: lighten($menu-bg-color, 7) !important;
+			}
+		}
+
+		/* Arrows */
+		&_bottomCenter {
+			&:before {
+				border-bottom-color: $menu-border-color;
+			}
+
+			&:after {
+				border-bottom-color: $menu-bg-color;
+			}
+		}
+
+		&_topCenter {
+			&:before {
+				border-top-color: $menu-border-color;
+			}
+
+			&:after {
+				border-top-color: $menu-bg-color;
+			}
+		}
+	}
+
+	.ipsModal {
+		background-color: rgba(100, 100, 100, 0.7);
+	}
+
+	.ipsAlert {
+		background-color: $bg-color;
+	}
+
+	.ipsDialog {
+		&_loading {
+			background-color: $bg-color;
+		}
+
+		&_title, &_close {
+			color: $title-color;
+		}
+
+		> div {
+			background-color: $bg-color;
+		}
+	}
+
+	.ipsSideMenu {
+		&_title {
+			color: $title-color;
+		}
+	}
+
+	a.ipsSideMenu_item,
+	.ipsSideMenu_item > a {
+		color: inherit;
+	}
+
+	.ipsSideMenu_itemActive a,
+	a.ipsSideMenu_itemActive,
+	span.ipsSideMenu_itemActive {
+		background-color: $menu-selected-item;
+		color: #FFFFFF;
+	}
+
+	.ipsSideMenu_item:not( .ipsSideMenu_itemActive ) a:hover,
+	a.ipsSideMenu_item:not( .ipsSideMenu_itemActive ):hover,
+	span.ipsSideMenu_item:not( .ipsSideMenu_itemActive ):hover {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	#elSearchExpanded {
+		background-color: $bg-alt-color;
+
+		.ipsMenu_title {
+			background-color: $box-head-bg-color;
+			border-color: $box-border-color;
+			color: $title-color;
+		}
+
+		.ipsSideMenu_list {
+			background-color: $bg-alt-color;
+			border-color: $box-border-color;
+		}
+	}
+}

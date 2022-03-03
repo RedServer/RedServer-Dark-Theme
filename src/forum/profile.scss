@@ -1,0 +1,34 @@
+/**
+ * Профили пользователей
+ */
+
+@import "./constants";
+
+body.ipsApp.ipsApp_front {
+	#elProfileActivityOverview .ipsStreamItem,
+	#elUserContent .ipsStreamItem,
+	#elSingleStatusUpdate .ipsStreamItem {
+		border-bottom-color: $separator-color;
+	}
+
+	.ipsTabs {
+		background-color: $tabs-bg-color;
+
+		&_item {
+			color: #FFFFFF !important;
+		}
+
+		&_panel {
+			background-color: $bg-color;
+		}
+
+		&_activeItem {
+			background-color: $bg-color;
+			color: $title-color;
+		}
+
+		&_contained {
+			border: none;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+/**
+ * Вспомогательные классы стилей IPS
+ */
+
+@import "./constants";
+
+body.ipsApp.ipsApp_front {
+	.ipsDataItem {
+		border-color: $separator-color;
+	}
+
+	.ipsAreaBackground {
+		background-color: $bg-alt-color;
+
+		&_reset {
+			background-color: $bg-color;
+		}
+
+		&_light {
+			background-color: $bg-alt-color;
+		}
+	}
+
+	.ipsType {
+		&_sectionHead {
+			color: $title-color;
+		}
+
+		&_sectionTitle {
+			color: $title-color;
+			background-color: $box-head-bg-color;
+
+			a {
+				color: $title-color;
+			}
+		}
+
+		&_pageTitle {
+			color: $title-color;
+		}
+
+		&_light {
+			color: $text-light-color;
+		}
+
+		&_richText {
+			color: $text-color;
+		}
+
+		&_huge {
+			color: $title-color;
+		}
+	}
+
+	a.ipsBadge,
+	a.ipsTag_remove {
+		color: #FFFFFF;
+	}
+
+	a.ipsType_blendLinks,
+	.ipsType_blendLinks a {
+		color: inherit;
+
+		&:hover {
+			color: $link-color;
+		}
+	}
+
+	a.ipsType_sectionTitle {
+		color: $title-color;
+	}
+
+	.ipsFieldRow {
+		&_section {
+			background-color: $bg-alt-color;
+			color: $title-color;
+		}
+
+		&_desc {
+			color: $text-light-color;
+		}
+	}
+
+}

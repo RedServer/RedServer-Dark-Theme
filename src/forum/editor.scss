@@ -1,0 +1,70 @@
+/**
+ * Редактор сообщений
+ */
+
+@import "./constants";
+
+body.ipsApp.ipsApp_front {
+	.ipsComposeArea_withPhoto .ipsComposeArea_editor:before {
+		border-right-color: rgba(255, 255, 255, 0.1);
+	}
+
+	.ipsComposeArea_editor {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	.ipsComposeArea_dummy {
+		background-color: $bg-color;
+		color: $text-color;
+	}
+
+	/* CKEditor */
+	.cke {
+		.cke_top {
+			background-color: $bg-alt-color;
+
+			.cke_button_label {
+				text-shadow: none;
+				color: $text-color;
+			}
+
+			.cke_button_icon {
+				background-image: url('../resources/cke_icons.png') !important;
+			}
+
+			.cke_button_arrow {
+				border-top-color: $text-color;
+			}
+
+			a.cke_button_off:hover,
+			a.cke_button_off:focus,
+			a.cke_button_off:active,
+			a.cke_button_disabled:hover,
+			a.cke_button_disabled:focus,
+			a.cke_button_disabled:active {
+				background-color: lighten($bg-alt-color, 5);
+			}
+
+			a.cke_button_on {
+				background-color: darken($bg-alt-color, 5);
+			}
+		}
+
+		.cke_wysiwyg_frame,
+		.cke_wysiwyg_div {
+			background-color: $bg-color;
+			color: $text-color;
+		}
+
+		textarea.cke_source {
+			background-color: $bg-color;
+			color: $text-color;
+			box-shadow: none;
+			border-radius: 0;
+		}
+
+		&.cke_hidpi .cke_button_icon {
+			background-image: url('../resources/cke_icons@2x.png') !important;
+		}
+	}
+}

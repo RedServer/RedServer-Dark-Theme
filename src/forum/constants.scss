@@ -1,0 +1,43 @@
+/**
+ * Настройки темы
+ */
+
+$bg-color: #1B1C1D;
+$bg-alt-color: #232323;
+
+$title-color: #E3E3E3;
+$text-color: #bfbfbf;
+$text-light-color: #878787;
+$link-color: #4da2f7;
+
+$box-head-bg-color: #303030;
+$box-border-color: #424242;
+
+$separator-color: #2D2D2D;
+$tabs-bg-color: #227093;
+$navigation-selected-item: #218c74;
+$control-active-color: #4698D6;
+$preloader-color: #FFFFFF;
+
+$menu-bg-color: #4E4E4E;
+$menu-border-color: $box-border-color;
+$menu-separator-color: $box-border-color;
+$menu-title-bg: darken($menu-bg-color, 5);
+$menu-selected-item: #227093;
+
+$button-text-color: #FFFFFF;
+$button-primary-bg: #646464;
+$button-important-bg: #218c74;
+$button-light-bg: #3B3B3B;
+$button-dark-bg: lighten($button-light-bg, 20);
+
+$activity-stream-color: #227093;
+
+$status-online: #05c46b;
+$status-offline: #485460;
+
+$item-selected-bg: rgba(77, 162, 247, 0.15);
+$item-moderated-bg: #341e1e;
+$item-moderated-text: #dc597a;
+$item-read-color: #424242;
+$item-unread-color: #cecece;

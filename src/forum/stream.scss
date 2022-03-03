@@ -1,0 +1,65 @@
+/**
+ * Ленты активности
+ */
+
+@import "./constants";
+
+body.ipsApp.ipsApp_front {
+
+	/* Панель фильтров */
+	.cStreamFilter {
+		background-color: $bg-color;
+
+		h3 {
+			color: $title-color;
+		}
+
+		> li > a {
+			color: $text-color;
+			border-right-color: $separator-color;
+		}
+
+		p em {
+			opacity: 0.5;
+		}
+	}
+
+	.ipsStream {
+		&_withTimeline {
+			border-left-color: $activity-stream-color;
+
+			.ipsStreamItem.ipsStreamItem_actionBlock:after {
+				background-color: $activity-stream-color;
+			}
+		}
+	}
+
+	.ipsStreamItem {
+		&_contentBlock {
+			border-color: $box-border-color;
+
+			&:before {
+				border-right-color: $box-border-color !important;
+			}
+
+			&:after {
+				border-right-color: $bg-color !important;
+			}
+		}
+
+		&_contentType {
+			color: $title-color;
+			background-color: $bg-color;
+			border-color: $activity-stream-color;
+		}
+
+		&_condensed .ipsStreamItem_stats {
+			border-left-color: $separator-color;
+		}
+
+		&_time {
+			background-color: $activity-stream-color;
+		}
+	}
+
+}

@@ -6,13 +6,15 @@ module.exports = (env, argv) => {
 	return {
 		mode: 'development',
 		entry: {
-			forum: './src/forum/main.scss'
+			'forum': './src/forum/_main.scss',
+			'forum.user': './src/forum/_user.scss'
 		},
 		output: {
 			path: path.resolve(__dirname, 'dist'),
-			filename: '[name].user.js',
+			filename: '[name].js',
 			clean: true
 		},
+		devtool: inDev ? 'source-map' : false,
 		module: {
 			rules: [
 				{
@@ -31,7 +33,7 @@ module.exports = (env, argv) => {
 		},
 		plugins: [
 			new MiniCssExtractPlugin({
-				filename: '[name].user.css',
+				filename: '[name].css',
 			})
 		],
 		devServer: {
