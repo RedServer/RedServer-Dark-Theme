@@ -1,6 +1,8 @@
 # IDE
 /.idea
 
+/dist/**
+!/dist/*.user.css
 /node_modules
 package-lock.json
 

@@ -5,8 +5,20 @@
   "description": "User styles for RedServer site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "prod": "webpack --mode production",
+    "serve": "webpack serve"
   },
   "author": "TheAndrey <me@theandrey.name>",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "css-loader": "^6.6.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
 }
