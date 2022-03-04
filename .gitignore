@@ -1,7 +1,8 @@
 # IDE
 /.idea
 
-/dist
+/dist/**
+!/dist/forum.user.css
 /node_modules
 package-lock.json
 
