@@ -1,0 +1,41 @@
+/**
+ * Таблица лидеров
+ */
+
+@import "./constants";
+
+body.ipsApp.ipsApp_front {
+	.cPastLeaders {
+		&_title {
+			&:before {
+				border-color: $separator-color;
+			}
+
+			span {
+				background-color: $bg-color;
+			}
+		}
+
+		&_cell {
+			background-color: $bg-alt-color;
+
+			&:after {
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	.cPopularItem {
+		> div:last-child {
+			border-right-color: $separator-color;
+		}
+
+		&_stats {
+			color: $text-light-color;
+
+			span {
+				opacity: 0.6;
+			}
+		}
+	}
+}

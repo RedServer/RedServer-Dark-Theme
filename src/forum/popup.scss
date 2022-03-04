@@ -85,6 +85,10 @@ body.ipsApp.ipsApp_front {
 			border-color: $menu-separator-color;
 		}
 
+		> li > hr.ipsHr {
+			border-color: $menu-separator-color;
+		}
+
 		&_selectable .ipsMenu_item:not( .ipsMenu_itemNonSelect ):not(.ipsMenu_itemChecked) {
 			a:before,
 			> span:before,
@@ -157,6 +161,16 @@ body.ipsApp.ipsApp_front {
 		}
 	}
 
+	.ipsSideMenu_withChecks {
+		.ipsSideMenu_item {
+			> input[type="checkbox"]:checked ~ a,
+			> input[type="checkbox"]:checked ~ span,
+			{
+				background-color: transparent; /* fix */
+			}
+		}
+	}
+
 	a.ipsSideMenu_item,
 	.ipsSideMenu_item > a {
 		color: inherit;
@@ -172,7 +186,13 @@ body.ipsApp.ipsApp_front {
 	.ipsSideMenu_item:not( .ipsSideMenu_itemActive ) a:hover,
 	a.ipsSideMenu_item:not( .ipsSideMenu_itemActive ):hover,
 	span.ipsSideMenu_item:not( .ipsSideMenu_itemActive ):hover {
-		background-color: rgba(255, 255, 255, 0.1);
+		background-color: $menu-hovered-item;
+	}
+
+	#elSearch {
+		input[type="search"] {
+			color: #444;
+		}
 	}
 
 	#elSearchExpanded {

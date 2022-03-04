@@ -24,6 +24,18 @@ body.ipsApp.ipsApp_front {
 		}
 	}
 
+	.cStreamForm_list li {
+		a.ipsSideMenu_item.ipsSideMenu_itemActive + .cStreamForm_menu,
+		a.ipsSideMenu_item:not( .ipsSideMenu_itemActive ):hover + .cStreamForm_menu {
+			background-color: rgba(0, 0, 0, 0.1);
+			color: $title-color;
+		}
+	}
+
+	.cStreamForm_nodes {
+		border-left-color: $menu-selected-item;
+	}
+
 	.ipsStream {
 		&_withTimeline {
 			border-left-color: $activity-stream-color;
@@ -45,6 +57,10 @@ body.ipsApp.ipsApp_front {
 			&:after {
 				border-right-color: $bg-color !important;
 			}
+		}
+
+		&_title {
+			color: $title-color;
 		}
 
 		&_contentType {

@@ -8,6 +8,7 @@ body.ipsApp.ipsApp_front {
 
 	.ipsButtonBar {
 		background-color: $bg-alt-color;
+		border-bottom-color: $separator-color;
 
 		.ipsButtonRow {
 			li {
@@ -137,10 +138,6 @@ body.ipsApp.ipsApp_front {
 		}
 	}
 
-	.bimcb_chatInput {
-		color: $text-color;
-	}
-
 	.ipsField_autocomplete input[type="text"] {
 		border: none;
 		box-shadow: none;
@@ -159,7 +156,7 @@ body.ipsApp.ipsApp_front {
 
 	.ipsCustomInput {
 		> span {
-			background: lighten($bg-color, 5);
+			background-color: lighten($bg-color, 5);
 			border-color: $box-border-color;
 		}
 
@@ -169,7 +166,7 @@ body.ipsApp.ipsApp_front {
 		}
 
 		input:active:not(:checked):not(:disabled) + span {
-			background: lighten($bg-color, 10);
+			background-color: lighten($bg-color, 10);
 		}
 
 		input[type="checkbox"]:checked + span {
@@ -192,6 +189,56 @@ body.ipsApp.ipsApp_front {
 
 		&_on {
 			background-color: $control-active-color;
+		}
+	}
+
+	.ipsSelectTree {
+		border-color: $box-border-color;
+		background-image: linear-gradient(to bottom, lighten($bg-color, 6) 0%, lighten($bg-color, 3) 100%);
+
+		&_placeholder {
+			color: darken($text-color, 35);
+		}
+
+		&_expand {
+			color: darken($text-color, 15);
+		}
+
+		&_active.ipsSelectTree_top,
+		&_active.ipsSelectTree_bottom {
+			border-color: $control-active-color;
+		}
+
+		&_nodes {
+			border-color: $control-active-color;
+			background-color: lighten($bg-color, 3);
+
+
+			[data-role="nodeList"] {
+				border-color: $box-border-color;
+				background-color: $bg-alt-color;
+
+				li .ipsSelectTree_toggle {
+					color: inherit !important;
+				}
+
+				li,
+				li [data-role="childWrapper"] {
+					border-color: $separator-color;
+				}
+
+				li .ipsSelectTree_item:not( .ipsSelectTree_itemDisabled ):hover {
+					background-color: $menu-hovered-item;
+				}
+			}
+		}
+
+		&_itemDisabled > [data-role="nodeTitle"] {
+			color: darken($text-color, 35);
+		}
+
+		&_selected {
+			background-color: $menu-selected-item !important;
 		}
 	}
 

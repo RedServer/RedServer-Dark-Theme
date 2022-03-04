@@ -5,10 +5,6 @@
 @import "./constants";
 
 body.ipsApp.ipsApp_front {
-	.ipsDataItem {
-		border-color: $separator-color;
-	}
-
 	.ipsAreaBackground {
 		background-color: $bg-alt-color;
 
@@ -39,7 +35,7 @@ body.ipsApp.ipsApp_front {
 			color: $title-color;
 		}
 
-		&_light {
+		&_light, &_minorHeading {
 			color: $text-light-color;
 		}
 
@@ -79,6 +75,10 @@ body.ipsApp.ipsApp_front {
 		&_desc {
 			color: $text-light-color;
 		}
+	}
+
+	.ipsEmpty {
+		color: lighten($bg-color, 20);
 	}
 
 }

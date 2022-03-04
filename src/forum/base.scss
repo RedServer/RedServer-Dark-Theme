@@ -72,6 +72,15 @@ body.ipsApp.ipsApp_front {
 				background-color: $bg-alt-color;
 			}
 		}
+
+		.ipsDataItem {
+			border-color: $separator-color;
+
+			&_new,
+			&_success {
+				background-color: $item-success-bg;
+			}
+		}
 	}
 
 	.ipsPager {
@@ -279,6 +288,53 @@ body.ipsApp.ipsApp_front {
 
 	iframe[data-embedContent].ipsEmbed_finishedLoading {
 		border-color: $box-border-color;
+	}
+
+	/* Выделение слов в поиске */
+	mark {
+		background-color: rgba(255, 255, 0, 0.3);
+		color: inherit !important;
+	}
+
+	/* Блок фильтра по форумам справа (динамический вид форума) */
+	.ipsSideMenu_item + .ipsSideMenu_list {
+		border-left-color: $separator-color;
+	}
+
+	.cForumMiniList {
+		.cForumMiniList_blob {
+			opacity: 1;
+			background-color: $box-border-color;
+
+			> span {
+				background-color: lighten($bg-color, 5);
+			}
+		}
+
+		> li > a.cForumMiniList_selected {
+			background-color: $menu-selected-item !important;
+			color: $button-text-color;
+		}
+	}
+
+	/* Чат */
+	.bimcb_chatInput {
+		color: $text-color;
+	}
+
+	/* Фикс цвета кнопок после применения нового стиля ссылок */
+	.ipsLightbox {
+		&_next,
+		&_prev,
+		&_close {
+			color: #FFFFFF !important;
+		}
+	}
+
+	#elMyClubsActivity {
+		.ipsStreamItem.ipsStreamItem_contentBlock {
+			border-bottom-color: $separator-color;
+		}
 	}
 
 }
