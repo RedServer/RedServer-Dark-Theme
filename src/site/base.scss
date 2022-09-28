@@ -1,0 +1,121 @@
+@import "./constants";
+
+body {
+	background-color: lighten($bg-color, 5);
+	background-image: url('../resources/background.jpg');
+	color: $text-color;
+}
+
+a {
+	color: $link-color;
+
+	&:hover {
+		color: $link-color;
+	}
+}
+
+.mainBox {
+	background-color: $bg-color;
+	border-right-color: $bg-alt-color;
+}
+
+.page_title {
+	background-image: url('../resources/dot_gray2.svg');
+
+	> h1 {
+		color: $title-color;
+	}
+
+	> * {
+		background-color: $bg-color;
+	}
+}
+
+.news_post {
+	.short_post_image {
+		border-color: $separator-color;
+	}
+
+	.post_counters > li {
+		border-right-color: $separator-color;
+	}
+
+	.post_contols {
+		border-top-color: $separator-color;
+	}
+
+	ul.post_stat > li {
+		border-right-color: $separator-color;
+	}
+}
+
+.tabs-box {
+	background-color: $box-bg-color;
+
+	.tab-content {
+		background-color: $bg-color;
+		border-color: $separator-color;
+	}
+
+	> .tabs-list {
+		> a.tab,
+		span.tab {
+			border-color: $separator-color;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+
+			&.selected {
+				background-color: $bg-color;
+			}
+		}
+
+	}
+
+}
+
+table.modern {
+	td {
+		border-bottom-color: $separator-color;
+	}
+
+	tr > td:nth-child(even) {
+		background-color: $bg-alt-color;
+		border-bottom-color: lighten($separator-color, 2);
+	}
+}
+
+ul.tabled.padded > li > .cell {
+	border-bottom-color: $separator-color;
+}
+
+.playtime_widget {
+	background-color: $bg-color;
+	border-color: $separator-color;
+
+	.widget_content {
+		border-color: $separator-color;
+	}
+}
+
+.ui-progress {
+	background-color: $bg-alt-color;
+}
+
+.hr_cut {
+	background-color: $bg-alt-color;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.player_head img {
+	background-color: $bg-color;
+}
+
+.user_blacklist_entries .blacklist_entry {
+	border-bottom-color: $separator-color;
+}
+
+.hr {
+	background-color: $separator-color;
+}

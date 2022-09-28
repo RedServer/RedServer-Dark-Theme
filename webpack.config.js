@@ -6,6 +6,7 @@ module.exports = (env, argv) => {
 	return {
 		mode: 'development',
 		entry: {
+			'site': './src/site/_main.scss',
 			'forum': './src/forum/_main.scss',
 			'forum.user': './src/forum/_user.scss'
 		},
