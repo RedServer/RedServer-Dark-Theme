@@ -46,11 +46,19 @@ body.ipsApp.ipsApp_front {
 		&_huge {
 			color: $title-color;
 		}
+
+		&_veryLarge {
+			color: #fff;
+		}
+	}
+
+	.cProfileRepScore .ipsType_minorHeading {
+		color: inherit;
 	}
 
 	a.ipsBadge,
 	a.ipsTag_remove {
-		color: #FFFFFF;
+		color: #fff;
 	}
 
 	a.ipsType_blendLinks,
@@ -79,6 +87,14 @@ body.ipsApp.ipsApp_front {
 
 	.ipsEmpty {
 		color: lighten($bg-color, 20);
+	}
+
+	.ipsAreaBackground {
+		background-color: $bg-alt-color;
+	}
+
+	.ipsUserPhoto {
+		background-color: $bg-color;
 	}
 
 }

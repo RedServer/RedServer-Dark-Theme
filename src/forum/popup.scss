@@ -9,7 +9,7 @@ body.ipsApp.ipsApp_front {
 	.main_menu {
 		> li,
 		> li > a {
-			color: #FFFFFF;
+			color: #fff;
 		}
 
 		> li.selected:not(.dropdown) > a,
@@ -17,7 +17,6 @@ body.ipsApp.ipsApp_front {
 		> li:not(.dropdown) > a:active {
 			border-color: $navigation-selected-item;
 		}
-
 
 		> li.dropdown {
 			.dropdown_menu {
@@ -180,7 +179,7 @@ body.ipsApp.ipsApp_front {
 	a.ipsSideMenu_itemActive,
 	span.ipsSideMenu_itemActive {
 		background-color: $menu-selected-item;
-		color: #FFFFFF;
+		color: #fff;
 	}
 
 	.ipsSideMenu_item:not( .ipsSideMenu_itemActive ) a:hover,
@@ -208,5 +207,14 @@ body.ipsApp.ipsApp_front {
 			background-color: $bg-alt-color;
 			border-color: $box-border-color;
 		}
+	}
+
+	.ipsAutocompleteMenu {
+		background-color: $menu-bg-color;
+		color: #fff;
+	}
+
+	.ipsAutocompleteMenu_item[data-selected] {
+		background-color: $menu-hovered-item;
 	}
 }

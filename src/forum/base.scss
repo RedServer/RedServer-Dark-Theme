@@ -18,12 +18,12 @@ body.ipsApp.ipsApp_front {
 
 	/* @упоминание пользователя */
 	a[data-mentionid] {
-		color: #FFFFFF;
+		color: #fff;
 	}
 
 	#gradientOverlay {
 		opacity: 0.8;
-		background-image: url('../resources/background.jpg');
+		background-image: url('../resources/background-gray.jpg');
 		background-size: cover;
 	}
 
@@ -125,6 +125,10 @@ body.ipsApp.ipsApp_front {
 	}
 
 	.ipsTable {
+		th {
+			background-color: $box-head-bg-color;
+		}
+
 		&.ipsMatrix {
 			thead th {
 				background-color: $box-head-bg-color;
@@ -134,6 +138,14 @@ body.ipsApp.ipsApp_front {
 			.ipsMatrix_subHeader {
 				background-color: $bg-alt-color;
 				color: $text-color;
+			}
+		}
+	}
+
+	.ipsTable_zebra {
+		tbody {
+			tr:nth-child(2n):not(.ipsTable_highlight):not(.ipsModerated) {
+				background-color: $bg-alt-color;
 			}
 		}
 	}
@@ -259,7 +271,7 @@ body.ipsApp.ipsApp_front {
 	.cAnnouncementPageTop a,
 	.cAnnouncementSidebar.ipsMessage a,
 	.cAnnouncementContentTop.ipsMessage a {
-		color: #FFFFFF;
+		color: #fff;
 	}
 
 	/* Встроенные сообщения в виде виджета (напр. ссылка на тему) */
@@ -327,7 +339,7 @@ body.ipsApp.ipsApp_front {
 		&_next,
 		&_prev,
 		&_close {
-			color: #FFFFFF !important;
+			color: #fff !important;
 		}
 	}
 
@@ -335,6 +347,11 @@ body.ipsApp.ipsApp_front {
 		.ipsStreamItem.ipsStreamItem_contentBlock {
 			border-bottom-color: $separator-color;
 		}
+	}
+
+	.cbDisconnect {
+		background-color: rgba(30, 30, 30, 0.8);
+		opacity: 1;
 	}
 
 }
