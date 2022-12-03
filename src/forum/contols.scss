@@ -6,240 +6,239 @@
 
 body.ipsApp.ipsApp_front {
 
-	.ipsButtonBar {
-		background-color: $bg-alt-color;
-		border-bottom-color: $separator-color;
+  .ipsButtonBar {
+    background-color: $bg-alt-color;
+    border-bottom-color: $separator-color;
 
-		.ipsButtonRow {
-			li {
-				> a,
-				> button,
-				> span {
-					background-color: $bg-color;
-					color: $button-text-color;
-				}
-			}
-		}
+    .ipsButtonRow {
+      li {
+        > a,
+        > button,
+        > span {
+          background-color: $bg-color;
+          color: $button-text-color;
+        }
+      }
+    }
 
-		~ .ipsButtonBar {
-			border-top-color: $separator-color;
-		}
-	}
+    ~ .ipsButtonBar {
+      border-top-color: $separator-color;
+    }
+  }
 
-	.ipsButtonRow li {
-		> a, > button, > span {
-			background-color: $button-light-bg;
-			color: $button-text-color;
-		}
-	}
+  .ipsButtonRow li {
+    > a, > button, > span {
+      background-color: $button-light-bg;
+      color: $button-text-color;
+    }
+  }
 
-	.ipsButton {
-		color: $button-text-color !important;
-		border-color: rgba(255, 255, 255, 0.1);
+  .ipsButton {
+    color: $button-text-color !important;
+    border-color: rgba(255, 255, 255, 0.1);
 
-		&_primary {
-			background-color: $button-primary-bg;
-			color: $button-text-color;
-		}
+    &_primary {
+      background-color: $button-primary-bg;
+      color: $button-text-color;
+    }
 
-		&_important {
-			background-color: $button-important-bg;
-			color: $button-text-color;
-		}
+    &_important {
+      background-color: $button-important-bg;
+      color: $button-text-color;
+    }
 
-		&_light, &_veryLight {
-			color: $text-color;
-			background-color: $button-light-bg;
-		}
+    &_light, &_veryLight {
+      color: $text-color;
+      background-color: $button-light-bg;
+    }
 
-		&_veryLight {
-			border-color: transparent;
-		}
+    &_veryLight {
+      border-color: transparent;
+    }
 
-		&_link {
-			&.ipsFollow,
-			&.ipsPromote {
-				background-color: $button-light-bg;
-			}
-		}
+    &_link {
+      &.ipsFollow,
+      &.ipsPromote {
+        background-color: $button-light-bg;
+      }
+    }
 
-		> a {
-			color: $button-text-color !important;
-		}
-	}
+    > a {
+      color: $button-text-color !important;
+    }
+  }
 
-	.ipsFollow .ipsCommentCount {
-		color: $title-color;
-		background-color: $button-dark-bg;
+  .ipsFollow .ipsCommentCount {
+    color: $title-color;
+    background-color: $button-dark-bg;
 
-		&:after {
-			border-right-color: $button-dark-bg;
-		}
-	}
+    &:after {
+      border-right-color: $button-dark-bg;
+    }
+  }
 
-	.ipsButton_split {
-		> .ipsButton.ipsButton_link,
-		> li > .ipsButton.ipsButton_link {
-			border-color: $box-border-color;
-		}
-	}
+  .ipsButton_split {
+    > .ipsButton.ipsButton_link,
+    > li > .ipsButton.ipsButton_link {
+      border-color: $box-border-color;
+    }
+  }
 
-	/* Переключатель страниц */
-	.ipsPagination {
-		&_page,
-		&_next,
-		&_prev,
-		&_first,
-		&_last {
-			a {
-				background-color: $button-light-bg !important;
-				color: $button-text-color !important;
-			}
-		}
+  /* Переключатель страниц */
+  .ipsPagination {
+    &_page,
+    &_next,
+    &_prev,
+    &_first,
+    &_last {
+      a {
+        background-color: $button-light-bg !important;
+        color: $button-text-color !important;
+      }
+    }
 
-		&_pageJump a {
-			color: $text-light-color;
-		}
+    &_pageJump a {
+      color: $text-light-color;
+    }
 
-		&_page {
-			a {
-				text-shadow: none;
-			}
-		}
+    &_page {
+      a {
+        text-shadow: none;
+      }
+    }
 
-		&_active {
-			a {
-				background-color: $button-dark-bg !important;
-			}
-		}
-	}
+    &_active {
+      a {
+        background-color: $button-dark-bg !important;
+      }
+    }
+  }
 
-	.ipsField_autocomplete,
-	textarea,
-	input[type="text"],
-	input[type="password"],
-	input[type="datetime"],
-	input[type="datetime-local"],
-	input[type="date"],
-	input[type="time"],
-	input[type="number"],
-	input[type="email"],
-	input[type="url"],
-	.ipsField_dummy {
-		color: darken($text-color, 15);
-		background-color: lighten($bg-color, 5);
-		border-color: $box-border-color;
-		box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) inset;
+  .ipsField_autocomplete,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="time"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  .ipsField_dummy {
+    color: darken($text-color, 15);
+    background-color: lighten($bg-color, 5);
+    border-color: $box-border-color;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) inset;
 
-		&:focus {
-			border-color: $control-active-color;
-			box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) inset, 0 0 3px transparentize($control-active-color, 0.3);
-			color: $text-color;
-		}
-	}
+    &:focus {
+      border-color: $control-active-color;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) inset, 0 0 3px transparentize($control-active-color, 0.3);
+      color: $text-color;
+    }
+  }
 
-	.ipsField_autocomplete input[type="text"] {
-		border: none;
-		box-shadow: none;
-		background: none;
-	}
+  .ipsField_autocomplete input[type="text"] {
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
 
-	select {
-		border-color: $box-border-color;
-		background-color: lighten($bg-color, 5);
-		color: $text-color;
+  select {
+    border-color: $box-border-color;
+    background-color: lighten($bg-color, 5);
+    color: $text-color;
 
-		&:not([multiple]) {
-			background-image: url('../resources/select_dropdown.png'), linear-gradient(to bottom, lighten($bg-color, 6) 0%, lighten($bg-color, 3) 100%);
-		}
-	}
+    &:not([multiple]) {
+      background-image: url('../resources/select_dropdown.png'), linear-gradient(to bottom, lighten($bg-color, 6) 0%, lighten($bg-color, 3) 100%);
+    }
+  }
 
-	.ipsCustomInput {
-		> span {
-			background-color: lighten($bg-color, 5);
-			border-color: $box-border-color;
-		}
+  .ipsCustomInput {
+    > span {
+      background-color: lighten($bg-color, 5);
+      border-color: $box-border-color;
+    }
 
-		input:checked + span,
-		input:focus + span {
-			border-color: $control-active-color !important;
-		}
+    input:checked + span,
+    input:focus + span {
+      border-color: $control-active-color !important;
+    }
 
-		input:active:not(:checked):not(:disabled) + span {
-			background-color: lighten($bg-color, 10);
-		}
+    input:active:not(:checked):not(:disabled) + span {
+      background-color: lighten($bg-color, 10);
+    }
 
-		input[type="checkbox"]:checked + span {
-			background-color: $control-active-color;
-		}
+    input[type="checkbox"]:checked + span {
+      background-color: $control-active-color;
+    }
 
-		input[type="radio"]:checked + span:after {
-			background-color: $control-active-color;
-		}
-	}
+    input[type="radio"]:checked + span:after {
+      background-color: $control-active-color;
+    }
+  }
 
-	.ipsToggle {
-		&:focus {
-			border-color: $control-active-color;
-		}
+  .ipsToggle {
+    &:focus {
+      border-color: $control-active-color;
+    }
 
-		&_off {
-			background-color: lighten($bg-color, 15);
-		}
+    &_off {
+      background-color: lighten($bg-color, 15);
+    }
 
-		&_on {
-			background-color: $control-active-color;
-		}
-	}
+    &_on {
+      background-color: $control-active-color;
+    }
+  }
 
-	.ipsSelectTree {
-		border-color: $box-border-color;
-		background-image: linear-gradient(to bottom, lighten($bg-color, 6) 0%, lighten($bg-color, 3) 100%);
+  .ipsSelectTree {
+    border-color: $box-border-color;
+    background-image: linear-gradient(to bottom, lighten($bg-color, 6) 0%, lighten($bg-color, 3) 100%);
 
-		&_placeholder {
-			color: darken($text-color, 35);
-		}
+    &_placeholder {
+      color: darken($text-color, 35);
+    }
 
-		&_expand {
-			color: darken($text-color, 15);
-		}
+    &_expand {
+      color: darken($text-color, 15);
+    }
 
-		&_active.ipsSelectTree_top,
-		&_active.ipsSelectTree_bottom {
-			border-color: $control-active-color;
-		}
+    &_active.ipsSelectTree_top,
+    &_active.ipsSelectTree_bottom {
+      border-color: $control-active-color;
+    }
 
-		&_nodes {
-			border-color: $control-active-color;
-			background-color: lighten($bg-color, 3);
+    &_nodes {
+      border-color: $control-active-color;
+      background-color: lighten($bg-color, 3);
 
+      [data-role="nodeList"] {
+        border-color: $box-border-color;
+        background-color: $bg-alt-color;
 
-			[data-role="nodeList"] {
-				border-color: $box-border-color;
-				background-color: $bg-alt-color;
+        li .ipsSelectTree_toggle {
+          color: inherit !important;
+        }
 
-				li .ipsSelectTree_toggle {
-					color: inherit !important;
-				}
+        li,
+        li [data-role="childWrapper"] {
+          border-color: $separator-color;
+        }
 
-				li,
-				li [data-role="childWrapper"] {
-					border-color: $separator-color;
-				}
+        li .ipsSelectTree_item:not( .ipsSelectTree_itemDisabled ):hover {
+          background-color: $menu-hovered-item;
+        }
+      }
+    }
 
-				li .ipsSelectTree_item:not( .ipsSelectTree_itemDisabled ):hover {
-					background-color: $menu-hovered-item;
-				}
-			}
-		}
+    &_itemDisabled > [data-role="nodeTitle"] {
+      color: darken($text-color, 35);
+    }
 
-		&_itemDisabled > [data-role="nodeTitle"] {
-			color: darken($text-color, 35);
-		}
-
-		&_selected {
-			background-color: $menu-selected-item !important;
-		}
-	}
+    &_selected {
+      background-color: $menu-selected-item !important;
+    }
+  }
 
 }

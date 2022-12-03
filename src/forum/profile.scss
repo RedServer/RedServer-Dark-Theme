@@ -5,36 +5,36 @@
 @import "./constants";
 
 body.ipsApp.ipsApp_front {
-	#elProfileActivityOverview .ipsStreamItem,
-	#elUserContent .ipsStreamItem,
-	#elSingleStatusUpdate .ipsStreamItem {
-		border-bottom-color: $separator-color;
-	}
+  #elProfileActivityOverview .ipsStreamItem,
+  #elUserContent .ipsStreamItem,
+  #elSingleStatusUpdate .ipsStreamItem {
+    border-bottom-color: $separator-color;
+  }
 
-	.ipsTabs {
-		background-color: $tabs-bg-color;
+  .ipsTabs {
+    background-color: $tabs-bg-color;
 
-		&_panels {
-			&.ipsTabs_contained {
-				background-color: $bg-color;
-			}
-		}
+    &_panels {
+      &.ipsTabs_contained {
+        background-color: $bg-color;
+      }
+    }
 
-		&_item {
-			color: #FFFFFF !important;
-		}
+    &_item {
+      color: #fff !important;
+    }
 
-		&_panel {
-			background-color: $bg-color;
-		}
+    &_panel {
+      background-color: $bg-color;
+    }
 
-		&_activeItem {
-			background-color: $bg-color;
-			color: $title-color;
-		}
+    &_activeItem {
+      background-color: $bg-color;
+      color: $title-color;
+    }
 
-		&_contained {
-			border: none;
-		}
-	}
+    &_contained {
+      border: none;
+    }
+  }
 }

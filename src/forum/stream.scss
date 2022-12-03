@@ -6,76 +6,76 @@
 
 body.ipsApp.ipsApp_front {
 
-	/* Панель фильтров */
-	.cStreamFilter {
-		background-color: $bg-color;
+  /* Панель фильтров */
+  .cStreamFilter {
+    background-color: $bg-color;
 
-		h3 {
-			color: $title-color;
-		}
+    h3 {
+      color: $title-color;
+    }
 
-		> li > a {
-			color: $text-color;
-			border-right-color: $separator-color;
-		}
+    > li > a {
+      color: $text-color;
+      border-right-color: $separator-color;
+    }
 
-		p em {
-			opacity: 0.5;
-		}
-	}
+    p em {
+      opacity: 0.5;
+    }
+  }
 
-	.cStreamForm_list li {
-		a.ipsSideMenu_item.ipsSideMenu_itemActive + .cStreamForm_menu,
-		a.ipsSideMenu_item:not( .ipsSideMenu_itemActive ):hover + .cStreamForm_menu {
-			background-color: rgba(0, 0, 0, 0.1);
-			color: $title-color;
-		}
-	}
+  .cStreamForm_list li {
+    a.ipsSideMenu_item.ipsSideMenu_itemActive + .cStreamForm_menu,
+    a.ipsSideMenu_item:not( .ipsSideMenu_itemActive ):hover + .cStreamForm_menu {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: $title-color;
+    }
+  }
 
-	.cStreamForm_nodes {
-		border-left-color: $menu-selected-item;
-	}
+  .cStreamForm_nodes {
+    border-left-color: $menu-selected-item;
+  }
 
-	.ipsStream {
-		&_withTimeline {
-			border-left-color: $activity-stream-color;
+  .ipsStream {
+    &_withTimeline {
+      border-left-color: $activity-stream-color;
 
-			.ipsStreamItem.ipsStreamItem_actionBlock:after {
-				background-color: $activity-stream-color;
-			}
-		}
-	}
+      .ipsStreamItem.ipsStreamItem_actionBlock:after {
+        background-color: $activity-stream-color;
+      }
+    }
+  }
 
-	.ipsStreamItem {
-		&_contentBlock {
-			border-color: $box-border-color;
+  .ipsStreamItem {
+    &_contentBlock {
+      border-color: $box-border-color;
 
-			&:before {
-				border-right-color: $box-border-color !important;
-			}
+      &:before {
+        border-right-color: $box-border-color !important;
+      }
 
-			&:after {
-				border-right-color: $bg-color !important;
-			}
-		}
+      &:after {
+        border-right-color: $bg-color !important;
+      }
+    }
 
-		&_title {
-			color: $title-color;
-		}
+    &_title {
+      color: $title-color;
+    }
 
-		&_contentType {
-			color: $title-color;
-			background-color: $bg-color;
-			border-color: $activity-stream-color;
-		}
+    &_contentType {
+      color: $title-color;
+      background-color: $bg-color;
+      border-color: $activity-stream-color;
+    }
 
-		&_condensed .ipsStreamItem_stats {
-			border-left-color: $separator-color;
-		}
+    &_condensed .ipsStreamItem_stats {
+      border-left-color: $separator-color;
+    }
 
-		&_time {
-			background-color: $activity-stream-color;
-		}
-	}
+    &_time {
+      background-color: $activity-stream-color;
+    }
+  }
 
 }

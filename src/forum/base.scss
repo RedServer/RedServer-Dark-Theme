@@ -5,354 +5,354 @@
 @import "./constants";
 
 body.ipsApp.ipsApp_front {
-	background-color: lighten($bg-color, 5);
-	color: $text-color;
-
-	a {
-		color: $link-color;
-
-		&:hover {
-			color: $link-color;
-		}
-	}
-
-	/* @упоминание пользователя */
-	a[data-mentionid] {
-		color: #fff;
-	}
-
-	#gradientOverlay {
-		opacity: 0.8;
-		background-image: url('../resources/background-gray.jpg');
-		background-size: cover;
-	}
-
-	#ipsLayout_body {
-		background-color: $bg-color;
-	}
-
-	.ipsBreadcrumb {
-		> ul > li,
-		> ul > li > a,
-		[data-action="defaultStream"],
-		[data-action="markSiteRead"] {
-			color: $text-light-color;
-
-			&:hover {
-				color: $link-color;
-			}
-		}
-	}
-
-	.ipsBox {
-		border-color: $box-border-color;
-
-		&:not(.ipsBox_transparent):not(.ipsModerated) {
-			background-color: $bg-color;
-		}
-	}
-
-	.ipsWidget {
-		&.ipsWidget_vertical, &.ipsWidget_horizontal {
-			.ipsWidget_title {
-				color: $title-color;
-				background-color: $box-head-bg-color;
-			}
-		}
-	}
-
-	hr.ipsHr {
-		border-color: $separator-color;
-	}
-
-	/* Списки */
-	.ipsDataList {
-		&.ipsDataList_zebra {
-			.ipsDataItem:not(.ipsDataItem_selected):not(.ipsModerated):not(.ipsDataItem_new):not(.ipsDataItem_success):not(.ipsDataItem_warning):not(.ipsDataItem_error):not(.ipsDataItem_info):not(.ipsDataItem_status):nth-child(2n) {
-				background-color: $bg-alt-color;
-			}
-		}
-
-		.ipsDataItem {
-			border-color: $separator-color;
-
-			&_new,
-			&_success {
-				background-color: $item-success-bg;
-			}
-		}
-	}
-
-	.ipsPager {
-		&_next, &_prev {
-			a:hover {
-				text-decoration: none;
-			}
-
-			a:after {
-				color: $text-color;
-			}
-
-		}
-
-		&_type {
-			color: $text-color;
-		}
-	}
-
-	.ipsReactOverview ul img {
-		border-color: $bg-color;
-	}
-
-	.ipsReact {
-		&_reactCount {
-			background-color: transparent;
-			border-color: $separator-color;
-
-			&:hover {
-				border-color: lighten($separator-color, 10);
-			}
-
-			> span > span:last-child,
-			> a > span:last-child {
-				color: $button-text-color;
-			}
-		}
-
-		&_types {
-			border-left-color: $separator-color !important;
-		}
-	}
-
-	.ipsTable {
-		th {
-			background-color: $box-head-bg-color;
-		}
-
-		&.ipsMatrix {
-			thead th {
-				background-color: $box-head-bg-color;
-				color: $title-color;
-			}
-
-			.ipsMatrix_subHeader {
-				background-color: $bg-alt-color;
-				color: $text-color;
-			}
-		}
-	}
-
-	.ipsTable_zebra {
-		tbody {
-			tr:nth-child(2n):not(.ipsTable_highlight):not(.ipsModerated) {
-				background-color: $bg-alt-color;
-			}
-		}
-	}
-
-	/* Цитата */
-	.ipsQuote {
-		border-color: $box-border-color $box-border-color $box-border-color darken($box-border-color, 10);
-		background-color: $bg-alt-color;
-
-		&_citation {
-			background-color: $box-head-bg-color;
-			color: $text-color;
-
-			a {
-				color: inherit;
-			}
-		}
-	}
-
-	/* Код */
-	.ipsCode {
-		background-color: $bg-alt-color;
-		border-left-color: $box-border-color !important;
-	}
-
-	.ipsSpoiler {
-		background-color: $bg-alt-color;
-		border-color: $box-border-color;
-
-		&_header {
-			color: $title-color;
-			background-color: $box-border-color;
-
-			a {
-				color: inherit;
-			}
-		}
-	}
-
-	/* Диалоги (мини-посты) */
-	.ipsComment {
-		background-color: $bg-color;
-
-		&_header {
-			background-color: $box-head-bg-color;
-			border-top-color: $box-border-color;
-		}
-
-		&_selected {
-			border-color: $menu-selected-item;
-			box-shadow: 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 5px $menu-selected-item;
-		}
-	}
-
-	.cMessage {
-		&_active {
-			background-color: $item-selected-bg !important;
-		}
-
-		&_members > ol > li {
-			border-right-color: $separator-color;
-		}
-	}
-
-	/* Иконки категорий форума */
-	.ipsItemStatus {
-		&.ipsItemStatus_large.ipsItemStatus_read {
-			background-color: $item-read-color;
-		}
-
-		&:not(.ipsItemStatus_large) {
-			color: $item-unread-color;
-
-			&.ipsItemStatus_read {
-				color: $item-read-color;
-			}
-		}
-	}
-
-	.ipsDataItem_subList li:not(.ipsDataItem_unread) a:before {
-		background-color: $item-read-color;
-	}
-
-	.ipsLoading:before {
-		border-color: $preloader-color transparent transparent $preloader-color;
-	}
-
-	.ipsItemControls {
-		border-top-color: $separator-color;
-	}
-
-	.ipsOnlineStatus {
-		&_online {
-			color: $status-online;
-		}
-
-		&_offline {
-			color: $status-offline;
-		}
-	}
-
-	.ipsTags .ipsTag:after,
-	.ipsTag_prefix:after {
-		background-color: $bg-color;
-	}
-
-	.ipsDataItem_selected {
-		background-color: $item-selected-bg;
-	}
-
-	.ipsModerated {
-		background-color: $item-moderated-bg;
-		color: $item-moderated-text;
-	}
-
-	.cPost.ipsModerated,
-	.cPost.ipsModerated .cAuthorPane {
-		background-color: $item-moderated-bg;
-	}
-
-	/* Объявление */
-	.cAnnouncementPageTop,
-	.cAnnouncementPageTop a,
-	.cAnnouncementSidebar.ipsMessage a,
-	.cAnnouncementContentTop.ipsMessage a {
-		color: #fff;
-	}
-
-	/* Встроенные сообщения в виде виджета (напр. ссылка на тему) */
-	#ipsEmbed {
-		background: $bg-color;
-	}
-
-	.ipsRichEmbed {
-		&_openItem {
-			opacity: 0.3;
-			color: $title-color !important;
-
-			&:hover {
-				opacity: 1;
-			}
-		}
-
-		&_originalItem {
-			border-color: $separator-color;
-		}
-
-		&_itemTitle {
-			color: $title-color;
-		}
-	}
-
-	iframe[data-embedContent].ipsEmbed_finishedLoading {
-		border-color: $box-border-color;
-	}
-
-	/* Выделение слов в поиске */
-	mark {
-		background-color: rgba(255, 255, 0, 0.3);
-		color: inherit !important;
-	}
-
-	/* Блок фильтра по форумам справа (динамический вид форума) */
-	.ipsSideMenu_item + .ipsSideMenu_list {
-		border-left-color: $separator-color;
-	}
-
-	.cForumMiniList {
-		.cForumMiniList_blob {
-			opacity: 1;
-			background-color: $box-border-color;
-
-			> span {
-				background-color: lighten($bg-color, 5);
-			}
-		}
-
-		> li > a.cForumMiniList_selected {
-			background-color: $menu-selected-item !important;
-			color: $button-text-color;
-		}
-	}
-
-	/* Чат */
-	.bimcb_chatInput {
-		color: $text-color;
-	}
-
-	/* Фикс цвета кнопок после применения нового стиля ссылок */
-	.ipsLightbox {
-		&_next,
-		&_prev,
-		&_close {
-			color: #fff !important;
-		}
-	}
-
-	#elMyClubsActivity {
-		.ipsStreamItem.ipsStreamItem_contentBlock {
-			border-bottom-color: $separator-color;
-		}
-	}
-
-	.cbDisconnect {
-		background-color: rgba(30, 30, 30, 0.8);
-		opacity: 1;
-	}
+  background-color: lighten($bg-color, 5);
+  color: $text-color;
+
+  a {
+    color: $link-color;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  /* @упоминание пользователя */
+  a[data-mentionid] {
+    color: #fff;
+  }
+
+  #gradientOverlay {
+    opacity: 0.8;
+    background-image: url('../resources/background-gray.jpg');
+    background-size: cover;
+  }
+
+  #ipsLayout_body {
+    background-color: $bg-color;
+  }
+
+  .ipsBreadcrumb {
+    > ul > li,
+    > ul > li > a,
+    [data-action="defaultStream"],
+    [data-action="markSiteRead"] {
+      color: $text-light-color;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+
+  .ipsBox {
+    border-color: $box-border-color;
+
+    &:not(.ipsBox_transparent):not(.ipsModerated) {
+      background-color: $bg-color;
+    }
+  }
+
+  .ipsWidget {
+    &.ipsWidget_vertical, &.ipsWidget_horizontal {
+      .ipsWidget_title {
+        color: $title-color;
+        background-color: $box-head-bg-color;
+      }
+    }
+  }
+
+  hr.ipsHr {
+    border-color: $separator-color;
+  }
+
+  /* Списки */
+  .ipsDataList {
+    &.ipsDataList_zebra {
+      .ipsDataItem:not(.ipsDataItem_selected):not(.ipsModerated):not(.ipsDataItem_new):not(.ipsDataItem_success):not(.ipsDataItem_warning):not(.ipsDataItem_error):not(.ipsDataItem_info):not(.ipsDataItem_status):nth-child(2n) {
+        background-color: $bg-alt-color;
+      }
+    }
+
+    .ipsDataItem {
+      border-color: $separator-color;
+
+      &_new,
+      &_success {
+        background-color: $item-success-bg;
+      }
+    }
+  }
+
+  .ipsPager {
+    &_next, &_prev {
+      a:hover {
+        text-decoration: none;
+      }
+
+      a:after {
+        color: $text-color;
+      }
+
+    }
+
+    &_type {
+      color: $text-color;
+    }
+  }
+
+  .ipsReactOverview ul img {
+    border-color: $bg-color;
+  }
+
+  .ipsReact {
+    &_reactCount {
+      background-color: transparent;
+      border-color: $separator-color;
+
+      &:hover {
+        border-color: lighten($separator-color, 10);
+      }
+
+      > span > span:last-child,
+      > a > span:last-child {
+        color: $button-text-color;
+      }
+    }
+
+    &_types {
+      border-left-color: $separator-color !important;
+    }
+  }
+
+  .ipsTable {
+    th {
+      background-color: $box-head-bg-color;
+    }
+
+    &.ipsMatrix {
+      thead th {
+        background-color: $box-head-bg-color;
+        color: $title-color;
+      }
+
+      .ipsMatrix_subHeader {
+        background-color: $bg-alt-color;
+        color: $text-color;
+      }
+    }
+  }
+
+  .ipsTable_zebra {
+    tbody {
+      tr:nth-child(2n):not(.ipsTable_highlight):not(.ipsModerated) {
+        background-color: $bg-alt-color;
+      }
+    }
+  }
+
+  /* Цитата */
+  .ipsQuote {
+    border-color: $box-border-color $box-border-color $box-border-color darken($box-border-color, 10);
+    background-color: $bg-alt-color;
+
+    &_citation {
+      background-color: $box-head-bg-color;
+      color: $text-color;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  /* Код */
+  .ipsCode {
+    background-color: $bg-alt-color;
+    border-left-color: $box-border-color !important;
+  }
+
+  .ipsSpoiler {
+    background-color: $bg-alt-color;
+    border-color: $box-border-color;
+
+    &_header {
+      color: $title-color;
+      background-color: $box-border-color;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  /* Диалоги (мини-посты) */
+  .ipsComment {
+    background-color: $bg-color;
+
+    &_header {
+      background-color: $box-head-bg-color;
+      border-top-color: $box-border-color;
+    }
+
+    &_selected {
+      border-color: $menu-selected-item;
+      box-shadow: 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 5px $menu-selected-item;
+    }
+  }
+
+  .cMessage {
+    &_active {
+      background-color: $item-selected-bg !important;
+    }
+
+    &_members > ol > li {
+      border-right-color: $separator-color;
+    }
+  }
+
+  /* Иконки категорий форума */
+  .ipsItemStatus {
+    &.ipsItemStatus_large.ipsItemStatus_read {
+      background-color: $item-read-color;
+    }
+
+    &:not(.ipsItemStatus_large) {
+      color: $item-unread-color;
+
+      &.ipsItemStatus_read {
+        color: $item-read-color;
+      }
+    }
+  }
+
+  .ipsDataItem_subList li:not(.ipsDataItem_unread) a:before {
+    background-color: $item-read-color;
+  }
+
+  .ipsLoading:before {
+    border-color: $preloader-color transparent transparent $preloader-color;
+  }
+
+  .ipsItemControls {
+    border-top-color: $separator-color;
+  }
+
+  .ipsOnlineStatus {
+    &_online {
+      color: $status-online;
+    }
+
+    &_offline {
+      color: $status-offline;
+    }
+  }
+
+  .ipsTags .ipsTag:after,
+  .ipsTag_prefix:after {
+    background-color: $bg-color;
+  }
+
+  .ipsDataItem_selected {
+    background-color: $item-selected-bg;
+  }
+
+  .ipsModerated {
+    background-color: $item-moderated-bg;
+    color: $item-moderated-text;
+  }
+
+  .cPost.ipsModerated,
+  .cPost.ipsModerated .cAuthorPane {
+    background-color: $item-moderated-bg;
+  }
+
+  /* Объявление */
+  .cAnnouncementPageTop,
+  .cAnnouncementPageTop a,
+  .cAnnouncementSidebar.ipsMessage a,
+  .cAnnouncementContentTop.ipsMessage a {
+    color: #fff;
+  }
+
+  /* Встроенные сообщения в виде виджета (напр. ссылка на тему) */
+  #ipsEmbed {
+    background: $bg-color;
+  }
+
+  .ipsRichEmbed {
+    &_openItem {
+      opacity: 0.3;
+      color: $title-color !important;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &_originalItem {
+      border-color: $separator-color;
+    }
+
+    &_itemTitle {
+      color: $title-color;
+    }
+  }
+
+  iframe[data-embedContent].ipsEmbed_finishedLoading {
+    border-color: $box-border-color;
+  }
+
+  /* Выделение слов в поиске */
+  mark {
+    background-color: rgba(255, 255, 0, 0.3);
+    color: inherit !important;
+  }
+
+  /* Блок фильтра по форумам справа (динамический вид форума) */
+  .ipsSideMenu_item + .ipsSideMenu_list {
+    border-left-color: $separator-color;
+  }
+
+  .cForumMiniList {
+    .cForumMiniList_blob {
+      opacity: 1;
+      background-color: $box-border-color;
+
+      > span {
+        background-color: lighten($bg-color, 5);
+      }
+    }
+
+    > li > a.cForumMiniList_selected {
+      background-color: $menu-selected-item !important;
+      color: $button-text-color;
+    }
+  }
+
+  /* Чат */
+  .bimcb_chatInput {
+    color: $text-color;
+  }
+
+  /* Фикс цвета кнопок после применения нового стиля ссылок */
+  .ipsLightbox {
+    &_next,
+    &_prev,
+    &_close {
+      color: #fff !important;
+    }
+  }
+
+  #elMyClubsActivity {
+    .ipsStreamItem.ipsStreamItem_contentBlock {
+      border-bottom-color: $separator-color;
+    }
+  }
+
+  .cbDisconnect {
+    background-color: rgba(30, 30, 30, 0.8);
+    opacity: 1;
+  }
 
 }
 

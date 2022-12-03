@@ -2,10 +2,10 @@
  * Настройки темы
  */
 
-$bg-color: #1B1C1D;
+$bg-color: #1b1c1d;
 $bg-alt-color: #232323;
 
-$title-color: #E3E3E3;
+$title-color: #e3e3e3;
 $text-color: #bfbfbf;
 $text-light-color: #878787;
 $link-color: #4da2f7;
@@ -13,23 +13,23 @@ $link-color: #4da2f7;
 $box-head-bg-color: #303030;
 $box-border-color: #424242;
 
-$separator-color: #2D2D2D;
+$separator-color: #2d2d2d;
 $tabs-bg-color: #227093;
 $navigation-selected-item: #218c74;
-$control-active-color: #4698D6;
-$preloader-color: #FFFFFF;
+$control-active-color: #4698d6;
+$preloader-color: #fff;
 
-$menu-bg-color: #4E4E4E;
+$menu-bg-color: #4e4e4e;
 $menu-border-color: $box-border-color;
 $menu-separator-color: $box-border-color;
 $menu-title-bg: darken($menu-bg-color, 5);
 $menu-hovered-item: rgba(255, 255, 255, 0.1);
 $menu-selected-item: #227093;
 
-$button-text-color: #FFFFFF;
+$button-text-color: #fff;
 $button-primary-bg: #646464;
 $button-important-bg: #218c74;
-$button-light-bg: #3B3B3B;
+$button-light-bg: #3b3b3b;
 $button-dark-bg: lighten($button-light-bg, 20);
 
 $activity-stream-color: #227093;
