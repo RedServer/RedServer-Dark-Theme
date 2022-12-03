@@ -6,8 +6,7 @@ module.exports = (env, argv) => {
 	return {
 		mode: 'development',
 		entry: {
-			'forum': './src/forum/_main.scss',
-			'forum.user': './src/forum/_user.scss'
+			'forum': './src/forum/main.scss',
 		},
 		output: {
 			path: path.resolve(__dirname, 'dist'),

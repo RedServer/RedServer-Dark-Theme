@@ -1,12 +1,3 @@
-/**
- * Точка входа для сборки стилей
- */
-
-/* Webkit browsers */
-:root {
-  color-scheme: dark;
-}
-
 @import "./base";
 @import "./profile";
 @import "./popup";
