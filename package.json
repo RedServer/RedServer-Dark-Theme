@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
-    "prod": "webpack --mode production",
+    "prod": "webpack",
     "serve": "webpack serve"
   },
   "author": "TheAndrey <me@theandrey.name>",

@@ -1,6 +1,6 @@
-/**
- * Основные стили страниц
- */
+// ----------------------
+// Основные стили страниц
+// ----------------------
 
 @import "./constants";
 
@@ -16,7 +16,7 @@ body.ipsApp.ipsApp_front {
     }
   }
 
-  /* @упоминание пользователя */
+  // @упоминание пользователя
   a[data-mentionid] {
     color: #fff;
   }
@@ -65,7 +65,7 @@ body.ipsApp.ipsApp_front {
     border-color: $separator-color;
   }
 
-  /* Списки */
+  // Списки
   .ipsDataList {
     &.ipsDataList_zebra {
       .ipsDataItem:not(.ipsDataItem_selected):not(.ipsModerated):not(.ipsDataItem_new):not(.ipsDataItem_success):not(.ipsDataItem_warning):not(.ipsDataItem_error):not(.ipsDataItem_info):not(.ipsDataItem_status):nth-child(2n) {
@@ -150,7 +150,7 @@ body.ipsApp.ipsApp_front {
     }
   }
 
-  /* Цитата */
+  // Цитата
   .ipsQuote {
     border-color: $box-border-color $box-border-color $box-border-color darken($box-border-color, 10);
     background-color: $bg-alt-color;
@@ -165,7 +165,7 @@ body.ipsApp.ipsApp_front {
     }
   }
 
-  /* Код */
+  // Код
   .ipsCode {
     background-color: $bg-alt-color;
     border-left-color: $box-border-color !important;
@@ -185,7 +185,7 @@ body.ipsApp.ipsApp_front {
     }
   }
 
-  /* Диалоги (мини-посты) */
+  // Диалоги (мини-посты)
   .ipsComment {
     background-color: $bg-color;
 
@@ -210,7 +210,7 @@ body.ipsApp.ipsApp_front {
     }
   }
 
-  /* Иконки категорий форума */
+  // Иконки категорий форума
   .ipsItemStatus {
     &.ipsItemStatus_large.ipsItemStatus_read {
       background-color: $item-read-color;
@@ -266,7 +266,7 @@ body.ipsApp.ipsApp_front {
     background-color: $item-moderated-bg;
   }
 
-  /* Объявление */
+  // Объявление
   .cAnnouncementPageTop,
   .cAnnouncementPageTop a,
   .cAnnouncementSidebar.ipsMessage a,
@@ -274,7 +274,7 @@ body.ipsApp.ipsApp_front {
     color: #fff;
   }
 
-  /* Встроенные сообщения в виде виджета (напр. ссылка на тему) */
+  // Встроенные сообщения в виде виджета (напр. ссылка на тему)
   #ipsEmbed {
     background: $bg-color;
   }
@@ -302,13 +302,13 @@ body.ipsApp.ipsApp_front {
     border-color: $box-border-color;
   }
 
-  /* Выделение слов в поиске */
+  // Выделение слов в поиске
   mark {
     background-color: rgba(255, 255, 0, 0.3);
     color: inherit !important;
   }
 
-  /* Блок фильтра по форумам справа (динамический вид форума) */
+  // Блок фильтра по форумам справа (динамический вид форума)
   .ipsSideMenu_item + .ipsSideMenu_list {
     border-left-color: $separator-color;
   }
@@ -329,12 +329,12 @@ body.ipsApp.ipsApp_front {
     }
   }
 
-  /* Чат */
+  // Чат
   .bimcb_chatInput {
     color: $text-color;
   }
 
-  /* Фикс цвета кнопок после применения нового стиля ссылок */
+  // Фикс цвета кнопок после применения нового стиля ссылок
   .ipsLightbox {
     &_next,
     &_prev,

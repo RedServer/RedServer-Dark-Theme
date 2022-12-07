@@ -1,6 +1,6 @@
-/**
- * Редактор сообщений
- */
+// ------------------
+// Редактор сообщений
+// ------------------
 
 @import "./constants";
 
@@ -18,7 +18,7 @@ body.ipsApp.ipsApp_front {
     color: $text-color;
   }
 
-  /* CKEditor */
+  // CKEditor
   .cke {
     .cke_top {
       background-color: $bg-alt-color;

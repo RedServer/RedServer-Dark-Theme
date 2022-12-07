@@ -1,6 +1,6 @@
-/**
- * Меню и всякие всплывающие панели
- */
+// --------------------------------
+// Меню и всякие всплывающие панели
+// --------------------------------
 
 @import "./constants";
 
@@ -29,7 +29,7 @@ body.ipsApp.ipsApp_front {
     }
   }
 
-  /* Всплывающие карточки пользователей и диалоги (со стрелкой) */
+  // Всплывающие карточки пользователей и диалоги (со стрелкой)
   .ipsHovercard {
     background-color: $bg-color;
     border-color: $box-border-color;
@@ -110,7 +110,7 @@ body.ipsApp.ipsApp_front {
       }
     }
 
-    /* Arrows */
+    // Arrows
     &_bottomCenter {
       &:before {
         border-bottom-color: $menu-border-color;
@@ -165,7 +165,7 @@ body.ipsApp.ipsApp_front {
       > input[type="checkbox"]:checked ~ a,
       > input[type="checkbox"]:checked ~ span,
       {
-        background-color: transparent; /* fix */
+        background-color: transparent; // fix
       }
     }
   }
