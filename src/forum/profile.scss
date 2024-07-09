@@ -5,6 +5,7 @@
 @import "./constants";
 
 body.ipsApp.ipsApp_front {
+
   #elProfileActivityOverview .ipsStreamItem,
   #elUserContent .ipsStreamItem,
   #elSingleStatusUpdate .ipsStreamItem {
@@ -36,5 +37,10 @@ body.ipsApp.ipsApp_front {
     &_contained {
       border: none;
     }
+  }
+
+  .ipsMemberCard {
+    background-color: $bg-color;
+    border-color: $separator-color;
   }
 }
